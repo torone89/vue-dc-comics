@@ -32,10 +32,13 @@ export default {
 <style scoped>
 nav {
   display: flex;
-  padding: 20px 0px;
 }
 figure {
   display: inline-block;
+}
+
+figure img {
+  padding: 20px 0px;
 }
 ul {
   display: flex;
@@ -47,5 +50,18 @@ ul {
 ul li {
   font-weight: bold;
   padding: 0 15px;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+li:hover {
+  color: #1e86ed;
+  border-bottom: 5px solid #1e86ed;
+}
+
+a {
+  color: #484646;
 }
 </style>
