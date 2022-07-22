@@ -5,17 +5,15 @@
         <figure>
           <img src="@/assets/img/dc-logo.png" alt="" />
         </figure>
+        <!-- LOGICA DINAMICA LISTE -->
         <ul>
-          <li><a href="#"></a>Characters</li>
-          <li><a href="#"></a>Comics</li>
-          <li><a href="#"></a> Movies</li>
-          <li><a href="#"></a>Tv</li>
-          <li><a href="#"></a>Games</li>
-          <li><a href="#"></a>Collectibles</li>
-          <li><a href="#"></a>Videos</li>
-          <li><a href="#"></a>Fan</li>
-          <li><a href="#"></a>News</li>
-          <li><a href="#"></a>Shop</li>
+          <li
+            v-for="(link, index) in links"
+            :key="index"
+            :class="{ active: link.current }"
+          >
+            <a :href="link.url">{{ link.text }}</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -25,6 +23,62 @@
 <script>
 export default {
   name: "BaseHeader",
+  data() {
+    return {
+      links: [
+        {
+          text: "Characters",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Comics",
+          url: "#",
+          current: true,
+        },
+        {
+          text: "Movies",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "TV",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Games",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Collectibles",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Videos",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Fans",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "News",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Shop",
+          url: "#",
+          current: false,
+        },
+      ],
+    };
+  },
 };
 </script>
 
