@@ -95,7 +95,7 @@ a {
   overflow: hidden;
 }
 
-img {
+.nav-right img {
   margin-top: -50px;
 }
 </style>

@@ -71,6 +71,7 @@ h1 {
   display: flex;
   align-items: center;
   color: white;
+  cursor: pointer;
 }
 
 img {
