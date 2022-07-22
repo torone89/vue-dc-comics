@@ -91,10 +91,12 @@ a {
 }
 
 .nav-right {
-  max-height: 200px;
+  max-height: 450px;
+  overflow: hidden;
 }
 
 img {
+  margin-top: -50px;
 }
 </style>
 
