@@ -48,4 +48,10 @@ a {
   color: black;
   text-decoration: none;
 }
+
+/* UTILS */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 </style>
