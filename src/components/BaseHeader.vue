@@ -29,39 +29,41 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang= "scss" scoped>
+@import "../assets/sass/vars";
 nav {
   display: flex;
 }
+
 figure {
   display: inline-block;
+
+  img {
+    padding: 20px 0px;
+  }
 }
 
-figure img {
-  padding: 20px 0px;
-}
 ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-}
 
-ul li {
-  font-weight: bold;
-  padding: 0 15px;
-  height: 100%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-li:hover {
-  color: #1e86ed;
-  border-bottom: 5px solid #1e86ed;
+  li {
+    font-weight: bold;
+    padding: 0 15px;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: $blue-color;
+      border-bottom: 5px solid $blue-color;
+    }
+  }
 }
 
 a {
-  color: #484646;
+  color: $strongGray-color;
 }
 </style>

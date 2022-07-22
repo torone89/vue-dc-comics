@@ -27,9 +27,10 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang= "scss" scoped>
+@import "../assets/sass/vars";
 .social-bg {
-  background-color: #2f2f2f;
+  background-color: $strongGray-color;
 }
 
 .social {
@@ -50,16 +51,16 @@ export default {
 /* BUTTON */
 button {
   border: none;
-  border: 2px solid #1e86ed;
+  border: 2px solid $blue-color;
   padding: 17px;
-  background-color: #2f2f2f;
+  background-color: $strongGray-color;
 }
 
 /* ALINK */
 a {
   text-transform: uppercase;
   font-weight: bold;
-  color: white;
+  color: $lightVhite-color;
   font-size: 15px;
 }
 
@@ -69,17 +70,16 @@ img {
   width: 50px;
   height: 50px;
   cursor: pointer;
-}
-
-img:hover {
-  background-color: white;
-  border-radius: 50px 50px;
+  &:hover {
+    background-color: $lightVhite-color;
+    border-radius: 50px 50px;
+  }
 }
 
 /* SPAN FOLLOW */
 .follow {
   text-transform: uppercase;
-  color: #1e86ed;
+  color: $blue-color;
   font-weight: bold;
   font-size: 20px;
   margin: 15px 10px;

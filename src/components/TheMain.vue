@@ -42,7 +42,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang= "scss" scoped>
+@import "../assets/sass/vars";
 /* HEADER */
 header {
   background-color: black;
@@ -50,14 +51,14 @@ header {
 }
 
 h1 {
-  color: white;
+  color: $lightVhite-color;
   font-weight: 500;
   font-size: 24px;
 }
 
 /* SEcTION ShOP */
 .shop {
-  background-color: #1e86ed;
+  background-color: $blue-color;
   padding: 50px 0;
 }
 
@@ -66,12 +67,12 @@ h1 {
   justify-content: space-around;
   align-items: center;
   text-transform: uppercase;
-}
-.container ul li {
-  display: flex;
-  align-items: center;
-  color: white;
-  cursor: pointer;
+  li {
+    display: flex;
+    align-items: center;
+    color: $lightVhite-color;
+    cursor: pointer;
+  }
 }
 
 img {
