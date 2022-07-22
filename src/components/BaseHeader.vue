@@ -107,6 +107,7 @@ ul {
     font-weight: bold;
     padding: 0 15px;
     height: 100%;
+    text-transform: uppercase;
     cursor: pointer;
     display: flex;
     align-items: center;
