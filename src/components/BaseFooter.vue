@@ -64,22 +64,18 @@ footer {
   background-image: url("../assets/img/footer-bg.jpg");
   background-size: cover;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
 }
-
 .nav-left {
   display: flex;
   padding: 40px 0;
 }
-
 li {
   margin-right: 30px;
   line-height: 30px;
 }
-
 h3 {
   text-transform: uppercase;
   font-size: 19px;
@@ -89,15 +85,14 @@ a {
   text-decoration: none;
   color: grey;
 }
-
 .nav-right {
   max-height: 450px;
   overflow: hidden;
 }
-
 .nav-right img {
   margin-top: -50px;
 }
 </style>
+
 
 

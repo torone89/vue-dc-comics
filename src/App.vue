@@ -27,35 +27,6 @@ export default {
 };
 </script>
 
-<style>
-/* GENERICS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-/* UTILS */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+<style lang="scss">
+@import "./assets/sass/style.scss";
 </style>
