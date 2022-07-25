@@ -3,11 +3,24 @@
     <!-- SEZIONE CARDS -->
     <section class="card-section">
       <div class="container">
+        <!-- BUTTON CURRENT SERIES -->
         <div class="button-load">
           <button>Current series</button>
         </div>
-        <!--  COMPONENTE CARDS -->
-        <CardSeries :cards="cards" />
+
+        <!-- LOgica Card -->
+        <div class="cards-box">
+          <!-- COMPONENTE CARD + LOGICA CREAZIONE CARD -->
+          <CardSeries
+            v-for="(card, index) in cards"
+            :key="index"
+            :showCard="card"
+            :cards="cards"
+            :serieSrc="card.thumb"
+            :serieTitle="card.series"
+          />
+        </div>
+        <!-- BUTTON LOAD -->
         <div class="button-load">
           <button>load more</button>
         </div>
@@ -80,6 +93,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang= "scss" scoped>
 @import "../assets/sass/vars";
+
 /* HEADER */
 header {
   background-color: black;
@@ -120,6 +134,12 @@ h1 {
   background-color: $CardBgGray-color;
 }
 
+.cards-box {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 // BUTTON LOAD STYLE// + CUrrentSeries (provvisorio)
 .button-load {
   padding-bottom: 30px;
