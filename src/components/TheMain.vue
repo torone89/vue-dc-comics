@@ -9,6 +9,8 @@
     <section class="card-section">
       <CardSeries :cards="cards" />
     </section>
+
+    <!-- SEZIONE SHOP -->
     <section class="shop">
       <div class="container">
         <ul>
@@ -28,7 +30,7 @@
 </template>
 
 <script>
-import CardSeries from "./CardSeries.vue";
+import CardSeries from "./CardSeries.vued";
 export default {
   name: "TheMain",
   components: { CardSeries },
