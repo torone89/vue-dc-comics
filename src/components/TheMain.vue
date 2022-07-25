@@ -1,10 +1,5 @@
 <template>
   <main>
-    <header>
-      <div class="container">
-        <h1>Content Goes Here</h1>
-      </div>
-    </header>
     <!-- SEZIONE CARDS -->
     <section class="card-section">
       <CardSeries :cards="cards" />
@@ -30,7 +25,7 @@
 </template>
 
 <script>
-import CardSeries from "./CardSeries.vued";
+import CardSeries from "./CardSeries.vue";
 export default {
   name: "TheMain",
   components: { CardSeries },
@@ -74,11 +69,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang= "scss" scoped>
 @import "../assets/sass/vars";
-/* HEADER */
-header {
-  background-color: black;
-  padding: 50px 0;
-}
 
 h1 {
   color: $lightVhite-color;
