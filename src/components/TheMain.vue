@@ -9,25 +9,9 @@
     <section class="shop">
       <div class="container">
         <ul>
-          <li>
-            <img src="../assets/img/buy-comics-digital-comics.png" alt="" />
-            <span>digital comics</span>
-          </li>
-          <li>
-            <img src="../assets/img/buy-comics-merchandise.png" alt="" />
-            <span>dc merchandise</span>
-          </li>
-          <li>
-            <img src="../assets/img/buy-comics-subscriptions.png" alt="" />
-            <span>subscription</span>
-          </li>
-          <li>
-            <img src="../assets/img/buy-comics-shop-locator.png" alt="" />
-            <span>comic shop locator</span>
-          </li>
-          <li>
-            <img src="../assets/img/buy-dc-power-visa.svg" alt="" />
-            <span>dc power visa</span>
+          <li v-for="(shop, index) in shop" :key="index">
+            <img :src="require(`../assets/img/${shop.src}`)" :alt="shop.text" />
+            <span> {{ shop.text }}</span>
           </li>
         </ul>
       </div>
@@ -38,6 +22,37 @@
 <script>
 export default {
   name: "THeMain",
+  data() {
+    return {
+      shop: [
+        {
+          text: "Digital Comics",
+          src: "buy-comics-digital-comics.png",
+          url: "#",
+        },
+        {
+          text: "DC Merchandise",
+          src: "buy-comics-merchandise.png",
+          url: "#",
+        },
+        {
+          text: "Subscription",
+          src: "buy-comics-subscriptions.png",
+          url: "#",
+        },
+        {
+          text: "Shop Location",
+          src: "buy-comics-shop-locator.png",
+          url: "#",
+        },
+        {
+          text: "Dc Power Visa",
+          src: "buy-dc-power-visa.svg",
+          url: "#",
+        },
+      ],
+    };
+  },
 };
 </script>
 
