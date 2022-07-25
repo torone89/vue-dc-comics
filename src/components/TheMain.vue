@@ -15,7 +15,6 @@
             v-for="(card, index) in cards"
             :key="index"
             :showCard="card"
-            :cards="cards"
             :serieSrc="card.thumb"
             :serieTitle="card.series"
           />
