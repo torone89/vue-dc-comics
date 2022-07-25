@@ -1,5 +1,6 @@
 <template>
   <main>
+    >
     <!-- SEZIONE CARDS -->
     <section class="card-section">
       <CardSeries :cards="cards" />
@@ -69,6 +70,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang= "scss" scoped>
 @import "../assets/sass/vars";
+/* HEADER */
+header {
+  background-color: black;
+  padding: 50px 0;
+}
 
 h1 {
   color: $lightVhite-color;
