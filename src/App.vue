@@ -2,6 +2,8 @@
   <div id="app">
     <!-- COMPONENTE HEADER -->
     <BaseHeader />
+    <!-- Componente JUMBOTRON -->
+    <TheJumbotron />
     <!-- COMPONTENTE MAIN -->
     <TheMain :cards="cards" />
     <!-- COMPONENTE FOOTER -->
@@ -12,6 +14,7 @@
 </template>
 
 <script>
+import TheJumbotron from "./components/TheJumbotron.vue";
 import BaseHeader from "./components/BaseHeader.vue";
 import TheMain from "./components/TheMain.vue";
 import BaseFooter from "./components/BaseFooter.vue";
@@ -24,6 +27,7 @@ export default {
   name: "App",
   components: {
     BaseHeader,
+    TheJumbotron,
     TheMain,
     BaseFooter,
     SocialFooter,

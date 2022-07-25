@@ -4,7 +4,7 @@
     <section class="card-section">
       <div class="container">
         <!-- BUTTON CURRENT SERIES -->
-        <div class="button-load">
+        <div class="button-series">
           <button>Current series</button>
         </div>
 
@@ -140,6 +140,34 @@ h1 {
   flex-wrap: wrap;
 }
 // BUTTON LOAD STYLE// + CUrrentSeries (provvisorio)
+.container {
+  position: relative;
+}
+.button-series {
+  position: absolute;
+  left: -10px;
+  top: -25px;
+  width: 300px;
+  padding: 5px 5px;
+  font-size: 18px;
+  button {
+    background-color: $blue-color;
+    padding: 10px 14px;
+    margin: 0 auto;
+    color: $lightVhite-color;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $lightVhite-color;
+      color: black;
+      border: 1px solid black;
+    }
+  }
+}
 .button-load {
   padding-bottom: 30px;
   text-align: center;
