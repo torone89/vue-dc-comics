@@ -1,12 +1,12 @@
 <template>
   <div class="cards-box">
+    <!-- LOGICA CARD -->
     <div v-for="card in cards" :key="card" class="cards">
       <img :src="card.thumb" />
       <h3>{{ card.series }}</h3>
     </div>
   </div>
 </template>
-
 
 <script>
 export default {
@@ -25,6 +25,8 @@ export default {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  // STILE CARDS
 
   .cards {
     margin-top: 30px;

@@ -6,9 +6,8 @@
         <div class="button-load">
           <button>Current series</button>
         </div>
-        <!-- CARDS -->
+        <!--  COMPONENTE CARDS -->
         <CardSeries :cards="cards" />
-
         <div class="button-load">
           <button>load more</button>
         </div>
@@ -19,7 +18,8 @@
     <section class="shop">
       <div class="container">
         <ul>
-          <li v-for="(shop, index) in shop" :key="index">
+          <!-- LOGICA SHOP -->
+          <li v-for="shop in shop" :key="shop">
             <a href="">
               <img
                 :src="require(`../assets/img/${shop.src}`)"
@@ -44,6 +44,7 @@ export default {
   },
   data() {
     return {
+      // DATI SEZIONE SHOP
       shop: [
         {
           text: "Digital Comics",

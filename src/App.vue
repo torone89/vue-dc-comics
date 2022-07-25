@@ -16,6 +16,8 @@ import BaseHeader from "./components/BaseHeader.vue";
 import TheMain from "./components/TheMain.vue";
 import BaseFooter from "./components/BaseFooter.vue";
 import SocialFooter from "./components/SocialFooter.vue";
+
+// IMPORTO I DATI da dc-comics.json
 import json from "../dc-comics.json";
 
 export default {
@@ -27,6 +29,7 @@ export default {
     SocialFooter,
   },
   data() {
+    // RICHIAMO I DATI DAL FILE JSON dc-comics
     return {
       cards: json,
     };
