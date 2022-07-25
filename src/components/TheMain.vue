@@ -1,9 +1,18 @@
 <template>
   <main>
-    >
     <!-- SEZIONE CARDS -->
     <section class="card-section">
-      <CardSeries :cards="cards" />
+      <div class="container">
+        <div class="button-load">
+          <button>Current series</button>
+        </div>
+        <!-- CARDS -->
+        <CardSeries :cards="cards" />
+
+        <div class="button-load">
+          <button>load more</button>
+        </div>
+      </div>
     </section>
 
     <!-- SEZIONE SHOP -->
@@ -109,4 +118,29 @@ h1 {
 .card-section {
   background-color: $CardBgGray-color;
 }
+
+// BUTTON LOAD STYLE// + CUrrentSeries (provvisorio)
+.button-load {
+  padding-bottom: 30px;
+  text-align: center;
+
+  button {
+    background-color: $blue-color;
+    padding: 15px 50px;
+    margin: 0 auto;
+    color: $lightVhite-color;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $lightVhite-color;
+      color: black;
+      border: 1px solid black;
+    }
+  }
+}
 </style>
+
